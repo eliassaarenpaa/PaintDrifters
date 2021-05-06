@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\GitHub\MyProjects\PaintDrifters\PaintDrifters" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="_Project" t="Include">
+          <e p="Scripts" t="Include">
+            <e p="Painter" t="Include">
+              <e p="MeshGenerator.cs" t="Include" />
+              <e p="Painter.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="PaintDrifters.sln" t="IncludeFlat" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+    </e>
+    <e p="C:\Users\elias\AppData\Local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\elias\AppData\Local\JetBrains\Transient\Rider\v203\SolutionCaches\_PaintDrifters.1476577297.00" t="ExcludeRecursive" />
+    <e p="C:\Users\elias\AppData\Roaming\JetBrains\Rider2020.3\consoles\db" t="IncludeRecursive" />
+    <e p="C:\Users\elias\AppData\Roaming\JetBrains\Rider2020.3\extensions" t="IncludeRecursive" />
+    <e p="C:\Users\elias\AppData\Roaming\JetBrains\Rider2020.3\scratches" t="IncludeRecursive" />
+  </component>
+</project>
