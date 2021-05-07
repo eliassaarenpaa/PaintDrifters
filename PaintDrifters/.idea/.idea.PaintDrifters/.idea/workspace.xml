@@ -2,47 +2,89 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="118eb6a1-6b1c-479f-ad29-9b52c745da0d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/_Project/Graphics/Cars.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Project/Graphics/Cars/BrushTexture.psd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Project/Graphics/Cars/BrushTexture.psd.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Project/Graphics/Cars/Brush_Mat.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Project/Graphics/Cars/Brush_Mat.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Project/Graphics/Cars/Car.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Project/Graphics/Cars/Car.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Project/Graphics/Cars/CarTexture.psd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Project/Graphics/Cars/CarTexture.psd.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Project/Graphics/Cars/Wheels_Mat.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Project/Graphics/Cars/Wheels_Mat.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Project/Graphics/Players/P1_Car_Mat.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Project/Graphics/Players/P1_Car_Mat.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Project/Graphics/Players/P1_Color_Mat.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Project/Graphics/Players/P1_Color_Mat.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Project/Graphics/Players/P1_PaintTrail_Mat.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Project/Graphics/Players/P1_PaintTrail_Mat.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Project/Graphics/Players/P2_Car_Mat.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Project/Graphics/Players/P2_Car_Mat.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Project/Graphics/Players/P2_Color_Mat.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Project/Graphics/Players/P2_Color_Mat.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Project/Graphics/Players/P2_PaintTrail_Mat.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/_Project/Graphics/Players/P2_PaintTrail_Mat.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/Graphics/Cars/Outline_Mat.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/Graphics/Cars/Outline_Mat.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/Graphics/ItemBox.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/Graphics/ItemBox/AbilityBoxTexture.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/Graphics/ItemBox/AbilityBoxTexture.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/Graphics/ItemBox/ItemBox.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/Graphics/ItemBox/ItemBox.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/Graphics/ItemBox/ItemBox_Mat.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/Graphics/ItemBox/ItemBox_Mat.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/Graphics/ItemBox/ItemBox_Outline_Mat.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/Graphics/ItemBox/ItemBox_Outline_Mat.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/Graphics/Kartio.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/Graphics/Kartio/Kartio.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/Graphics/Kartio/Kartio.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/Graphics/Kartio/KartioTexture.psd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/Graphics/Kartio/KartioTexture.psd.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/Graphics/Kartio/Kartio_Mat.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/Graphics/Kartio/Kartio_Mat.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/Graphics/PaintArea.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/Graphics/PaintArea/AreaMarker_Mat.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/Graphics/PaintArea/AreaMarker_Mat.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/Graphics/PaintArea/Circle.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/Graphics/PaintArea/Circle.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/Graphics/UI/HowToButton.psd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/Graphics/UI/HowToButton.psd.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/Graphics/UI/HowToButtonPressed.psd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/Graphics/UI/HowToButtonPressed.psd.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/Graphics/UI/Logo.psd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/Graphics/UI/Logo.psd.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/Graphics/UI/PlayButton.psd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/Graphics/UI/PlayButton.psd.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/Graphics/UI/PlayButtonPressed.psd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/Graphics/UI/PlayButtonPressed.psd.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/Graphics/UI/QuitButton.psd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/Graphics/UI/QuitButton.psd.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/Graphics/UI/QuitButtonPressed.psd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/Graphics/UI/QuitButtonPressed.psd.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/Graphics/UI/RestartButton.psd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/Graphics/UI/RestartButton.psd.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/Graphics/UI/RestartButtonPressed.psd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/Graphics/UI/RestartButtonPressed.psd.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/Graphics/UI/Splashes.psd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/Graphics/UI/Splashes.psd.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/Graphics/UI/Splashes2.psd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/Graphics/UI/Splashes2.psd.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/Graphics/UI/ToMenuButton.psd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/Graphics/UI/ToMenuButton.psd.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/Graphics/UI/ToMenuButtonPressed.psd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/Graphics/UI/ToMenuButtonPressed.psd.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/Scenes/GameScene.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/Scenes/GameScene.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/Scenes/MenuScene.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Project/Scenes/MenuScene.unity.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PaintDrifters/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PaintDrifters/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Graphics/Players/P1_TestPlayer_Mat.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Graphics/Players/P1_TestPlayer_Mat.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Graphics/Players/P2_TestPlayer_Mat.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Graphics/Players/P2_TestPlayer_Mat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Drop Shadow.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Drop Shadow.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Project/Prefabs/P1_Red_ArrowInput.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Prefabs/P1_Red_ArrowInput.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Project/Prefabs/P2_Blue_WASDInput.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Prefabs/P2_Blue_WASDInput.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Project/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Prefabs/Player.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Project/Scenes/Elias.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scenes/Elias.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/Painter/MeshGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/Painter/MeshGenerator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/Scripts/PlayerControls/CarController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/Scripts/PlayerControls/CarController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Project/z_Delete/TestFloor_Mat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Project/z_Delete/TestFloor_Mat.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ArtifactDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ArtifactDB" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentMaximizeLayout.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/LastSceneManagerSetup.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/LastSceneManagerSetup.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ShaderCache/EditorEncounteredVariants" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ShaderCache/EditorEncounteredVariants" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/SourceAssetDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SourceAssetDB" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/StateCache/Hierarchy/4c969a-mainStage.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/Hierarchy/4c969a-mainStage.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/StateCache/SceneView/cc2798-mainStage.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/SceneView/cc2798-mainStage.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/expandedItems" beforeDir="false" afterPath="$PROJECT_DIR$/Library/expandedItems" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe1.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe1.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe10.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe10.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe11.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe11.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe2.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe2.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe3.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe3.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe4.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe4.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe5.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe5.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe6.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe6.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe7.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe7.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe8.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe8.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe9.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler.exe9.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +108,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/_Project/Scripts/PlayerControls/CarController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Project/Scripts/PlayerControls/Inputs/WASDInput.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Project/Scripts/Painter/MeshGenerator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Project/Scripts/ItemBox/Rotator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Project/Scripts/Painter/PainterUI.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -85,6 +128,7 @@
       <option value="$PROJECT_DIR$/Assets/_Project/Scripts/Painter/Painter.cs" />
       <option value="$PROJECT_DIR$/Assets/_Project/Scripts/Painter/MeshGenerator.cs" />
       <option value="$PROJECT_DIR$/Assets/_Project/Scripts/PlayerControls/CarController.cs" />
+      <option value="$PROJECT_DIR$/Assets/_Project/Scripts/ItemBox/Rotator.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1s8TOhOiLfWhrkITutUi1RqExfR" />
@@ -142,7 +186,7 @@
       <workItem from="1620366849340" duration="691000" />
       <workItem from="1620368025487" duration="131000" />
       <workItem from="1620368216112" duration="76000" />
-      <workItem from="1620368334957" duration="14812000" />
+      <workItem from="1620368334957" duration="16543000" />
     </task>
     <servers />
   </component>
