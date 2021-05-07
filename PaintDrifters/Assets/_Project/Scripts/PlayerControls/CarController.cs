@@ -32,6 +32,7 @@ public class CarController : MonoBehaviour {
     private void FixedUpdate() {
         _rb.velocity = transform.forward.normalized * defaultMoveSpeed;
 
+        // Change car move dir
         var rotation = transform.eulerAngles;
 
         var rotateSpeed = _playerInputs.IsDrifting ? driftRotateSpeed : defaultRotateSpeed;
@@ -41,6 +42,7 @@ public class CarController : MonoBehaviour {
         rotation.y = Mathf.Lerp( rotation.y, targetYRotation, Time.fixedDeltaTime * rotateSmooth );
         
         transform.eulerAngles = rotation;
+
     }
 
 }

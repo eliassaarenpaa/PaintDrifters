@@ -13,7 +13,7 @@ public class MeshGenerator : MonoBehaviour {
         var instance = new GameObject( "Lätäkkö" );
         var meshFilter = instance.AddComponent<MeshFilter>();
         var meshRend = instance.AddComponent<MeshRenderer>();
-
+        
         // New mesh
         var mesh = new Mesh();
         var verticies = points;
