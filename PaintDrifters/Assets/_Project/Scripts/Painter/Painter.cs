@@ -7,81 +7,119 @@ public class Painter : MonoBehaviour {
 
     [SerializeField] private LayerMask paintLayer;
     [SerializeField] private LineRenderer lineRenderer;
+    [SerializeField] private Material paintMaterial;
     [SerializeField] private MeshCollider paintMeshCollider;
     [SerializeField] private float minMoveDistToGenerateLine;
-    
-    [Header("test controls... delete later")]
-    [SerializeField] private float speed; // TODO: delete speed variable
+    [SerializeField] private float paintYoffset;
     
     private Vector3 _lastPos;
     private Rigidbody _rb;
+    
+    public bool isActive;
 
     private void Awake() {
         _rb = GetComponent<Rigidbody>();
+        isActive = false;
+    }
+
+    private void Start() {
+        ResetThisLineRenderer();
     }
 
     private void Update() {
-        // TODO: delete movement logic
-        var vel = _rb.velocity;
-        vel.x = Input.GetAxisRaw( "Horizontal" );
-        vel.z = Input.GetAxisRaw( "Vertical" );
-        _rb.velocity = vel * speed;
-        
+        if ( !isActive ) {
+            
+            ResetThisLineRenderer();
+            return;
+        }
+
         // Check for rigidbody movement & that painter transform has moved a certain min distance
         if ( _rb.velocity.magnitude > 0.1f && Vector3.Distance( transform.position, _lastPos ) > minMoveDistToGenerateLine ) {
-            var point = _lastPos + Vector3.up * 0.1f;
-            AddPointToLineRenderer( point );        
+            AddPointToLineRenderer( GetTargetPaintPos(), lineRenderer, paintMeshCollider );
             _lastPos = transform.position;
         }
     }
 
-    private void AddPointToLineRenderer(Vector3 point) {
-        var positionCount = lineRenderer.positionCount;
-        positionCount++;
-        lineRenderer.positionCount = positionCount;
-
-        lineRenderer.SetPosition( positionCount - 1, point );
-        
-        var mesh = new Mesh();
-        lineRenderer.BakeMesh( mesh, true );
-        paintMeshCollider.sharedMesh = mesh;
-    }
-    
     /// <summary>
-    /// Clear line renderer
-    /// </summary>
-    private void ClearPoints() {
-        lineRenderer.positionCount = 0;
-    }
-
-    /// <summary>
-    /// Check for intersecting line & make lätäkkö 
+    ///     Check for intersecting line & make lätäkkö
     /// </summary>
     /// <param name="other"></param>
     private void OnTriggerEnter( Collider other ) {
+        if ( !isActive ) return;
         if ( 1 << other.gameObject.layer != paintLayer ) return;
 
-        var meshgen = FindObjectOfType<MeshGenerator>();
-        meshgen.GenerateMesh( GetLinerendPositionsFrom( GetNearestLineRenderIndex() ) );
+        // Touching other line renderer
+        if ( other != paintMeshCollider ) {
 
-        ClearPoints();
+            var otherLinerend = other.GetComponent<LineRenderer>();
+            var nearestIndexToOther = GetNearestLineRenderIndex( otherLinerend );
+            var newOtherLinePoints = GetLinerendPositionsFrom( nearestIndexToOther, otherLinerend );
+            ConstructLinerend( otherLinerend, newOtherLinePoints );
+
+            return;
+        }
+
+        // Touching own line renderer
+        var meshgen = FindObjectOfType<MeshGenerator>();
+        var nearestIndex = GetNearestLineRenderIndex( lineRenderer );
+        var points = GetLinerendPositionsFrom( nearestIndex, lineRenderer );
+        meshgen.GenerateMesh( points, paintMaterial );
+
+        ResetThisLineRenderer();
+    }
+
+    private Vector3 GetTargetPaintPos() {
+        var point = _lastPos;
+        point.y = 0;
+        point.y += paintYoffset;
+
+        return point;
     }
 
     /// <summary>
-    /// Get every point on line renderer
+    ///     Extend line renderer by a position
+    /// </summary>
+    /// <param name="point"></param>
+    private void AddPointToLineRenderer( Vector3 point, LineRenderer renderer, MeshCollider collider ) {
+        var positionCount = renderer.positionCount;
+        positionCount++;
+        renderer.positionCount = positionCount;
+
+        renderer.SetPosition( positionCount - 1, point );
+
+        var mesh = new Mesh();
+        renderer.BakeMesh( mesh, true );
+        collider.sharedMesh = mesh;
+    }
+
+    /// <summary>
+    ///     Clear the line renderer & mesh collider
+    ///     Set the last position as current
+    /// </summary>
+    private void ResetThisLineRenderer( ) {
+        lineRenderer.positionCount = 0;
+        paintMeshCollider.sharedMesh = null;
+        _lastPos = transform.position;
+    }
+
+    /// <summary>
+    ///     Get every point on line renderer
     /// </summary>
     /// <returns></returns>
-    private Vector3[] GetLinerendPositions() {
-        var positionCount = lineRenderer.positionCount;
+    private Vector3[] GetLinerendPositions( LineRenderer renderer ) {
+        var positionCount = renderer.positionCount;
         var positions = new Vector3[positionCount];
-        lineRenderer.GetPositions( positions );
+        renderer.GetPositions( positions );
 
         return positions;
     }
 
-    // Get the index of line renderer point by closest to painter transform 
-    private int GetNearestLineRenderIndex() {
-        var positions = GetLinerendPositions();
+    /// <summary>
+    ///     Get the index of line renderer point by closest to painter transform
+    /// </summary>
+    /// <returns></returns>
+    private int GetNearestLineRenderIndex( LineRenderer renderer ) {
+        var positions = GetLinerendPositions( renderer );
         var distance = 999f;
         var nearest = 0;
 
@@ -97,14 +135,30 @@ public class Painter : MonoBehaviour {
         return nearest;
     }
 
-    // Get every point on line renderer starting from index
-    private Vector3[] GetLinerendPositionsFrom( int index ) {
+    /// <summary>
+    ///     Get every point on line renderer starting from index
+    /// </summary>
+    /// <param name="index"></param>
+    /// <returns></returns>
+    private Vector3[] GetLinerendPositionsFrom( int index, LineRenderer renderer ) {
         var newPosList = new List<Vector3>();
-        var positions = GetLinerendPositions();
+        var positions = GetLinerendPositions( renderer );
 
-        for ( var i = index; i < lineRenderer.positionCount; i++ ) newPosList.Add( positions[i] );
+        for ( var i = index; i < renderer.positionCount; i++ )
+            newPosList.Add( positions[i] );
 
         return newPosList.ToArray();
+    }
+
+    /// <summary>
+    ///     Set the points of a line renderer
+    /// </summary>
+    /// <param name="renderer"></param>
+    /// <param name="newPoints"></param>
+    private void ConstructLinerend( LineRenderer renderer, Vector3[] newPoints ) {
+        renderer.positionCount = newPoints.Length;
+
+        for ( var i = 0; i < renderer.positionCount; i++ ) renderer.SetPosition( i, newPoints[i] );
     }
 
 }

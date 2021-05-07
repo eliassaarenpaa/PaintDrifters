@@ -5,9 +5,9 @@ using UnityEngine;
 
 public class MeshGenerator : MonoBehaviour {
 
-    [SerializeField] private Material material;
+    private readonly List<GameObject> _paintStack = new List<GameObject>();
 
-    public void GenerateMesh( Vector3[] points ) {
+    public void GenerateMesh( Vector3[] points, Material mat ) {
 
         // Create a new instance & add components
         var instance = new GameObject( "Lätäkkö" );
@@ -45,7 +45,24 @@ public class MeshGenerator : MonoBehaviour {
 
         // Assign variables
         meshFilter.mesh = mesh;
-        meshRend.material = material;
+        meshRend.material = mat;
+
+        _paintStack.Add( instance );
+
+        UpdatePaintStack();
+    }
+
+    private void UpdatePaintStack() {
+
+        for ( var i = 0; i < _paintStack.Count; i++ ) {
+
+            var instance = _paintStack[i];
+
+            var pos = instance.transform.position;
+            pos.y = i * 0.001f;
+            instance.transform.position = pos;
+
+        }
 
     }
 
