@@ -7,6 +7,7 @@ public class AbilityHolder : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        ability.ActivateAbility();
         Destroy(gameObject);
     }
 

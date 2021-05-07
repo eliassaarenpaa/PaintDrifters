@@ -679,8 +679,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: d9b9afa20acc669469ff05bef604ef19, type: 2}
   abilityBox: {fileID: 3075219171040262526, guid: 676ed87e9939a1e4da57e44a3852c4ea,
     type: 3}
-  minSpawnTime: 8
-  maxSpawnTime: 13
+  minSpawnTime: 35
+  maxSpawnTime: 45
   currentSpawnTime: 0
   minZ: -15
   minX: -25
