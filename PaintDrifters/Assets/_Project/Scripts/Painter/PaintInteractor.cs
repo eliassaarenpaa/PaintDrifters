@@ -41,7 +41,7 @@ public class PaintInteractor : MonoBehaviour {
             ReplenishPaint();
     }
 
-    private void ReplenishPaint() {
+    public void ReplenishPaint() {
         _paintPercentage = 1;
     }
 

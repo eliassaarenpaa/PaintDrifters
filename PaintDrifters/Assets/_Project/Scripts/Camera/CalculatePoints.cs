@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.Events;
 
 public class CalculatePoints : MonoBehaviour
 {
@@ -6,6 +7,8 @@ public class CalculatePoints : MonoBehaviour
     [SerializeField] private Camera calcCamera;
 
     [SerializeField] private Vector3[] colors;
+
+    [SerializeField] private UnityEvent onPointsCountedEvent;
 
     private Points _points;
 
@@ -43,5 +46,6 @@ public class CalculatePoints : MonoBehaviour
                 _points.AddPoints(2, 1);
             }
         }
+        onPointsCountedEvent?.Invoke();
     }
 }

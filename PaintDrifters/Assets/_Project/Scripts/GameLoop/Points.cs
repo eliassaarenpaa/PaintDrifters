@@ -17,4 +17,14 @@ public class Points : MonoBehaviour
             playerTwoPoints += points;
         }
     }
+
+    public int GetWinner()
+    {
+        if (playerOnePoints > playerTwoPoints)
+        {
+            return 1;
+        }
+        return 2;
+    }
+
 }

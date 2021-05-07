@@ -1,10 +1,9 @@
 ﻿using UnityEngine;
 
-[CreateAssetMenu(menuName = "Ability")]
-public class Ability : ScriptableObject
+public abstract class Ability : ScriptableObject
 {
 
-    public void ActivateAbility()
+    public virtual void ActivateAbility(CarController controller)
     {
     }
 

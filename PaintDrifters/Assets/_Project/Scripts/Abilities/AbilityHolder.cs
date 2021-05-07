@@ -7,7 +7,7 @@ public class AbilityHolder : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        ability.ActivateAbility();
+        ability.ActivateAbility(other.GetComponentInParent<CarController>());
         Destroy(gameObject);
     }
 
