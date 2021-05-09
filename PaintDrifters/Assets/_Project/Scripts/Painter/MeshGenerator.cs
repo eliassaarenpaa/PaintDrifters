@@ -11,6 +11,7 @@ public class MeshGenerator : MonoBehaviour {
 
         // Create a new instance & add components
         var instance = new GameObject( "Lätäkkö" );
+        instance.layer = 10;
         var meshFilter = instance.AddComponent<MeshFilter>();
         var meshRend = instance.AddComponent<MeshRenderer>();
         
