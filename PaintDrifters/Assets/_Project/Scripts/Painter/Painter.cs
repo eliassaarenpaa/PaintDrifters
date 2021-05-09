@@ -96,7 +96,7 @@ public class Painter : MonoBehaviour {
     ///     Clear the line renderer & mesh collider
     ///     Set the last position as current
     /// </summary>
-    private void ResetThisLineRenderer( ) {
+    public void ResetThisLineRenderer( ) {
         lineRenderer.positionCount = 0;
         paintMeshCollider.sharedMesh = null;
         _lastPos = transform.position;

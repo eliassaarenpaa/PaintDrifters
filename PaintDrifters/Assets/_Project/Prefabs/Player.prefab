@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 8723971096281597380}
   - component: {fileID: 4845962419464218244}
   - component: {fileID: 5207205936246085404}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: Cloud Particle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4805,7 +4805,7 @@ GameObject:
   - component: {fileID: 8742754306547011035}
   - component: {fileID: 8742754306547011034}
   - component: {fileID: 8742754306547011033}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: PaintLine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5003,6 +5003,7 @@ GameObject:
   - component: {fileID: 8742754308309633457}
   - component: {fileID: 4086033684334786138}
   - component: {fileID: 7729765419481987871}
+  - component: {fileID: 3363091248227003172}
   m_Layer: 0
   m_Name: PlayerCar
   m_TagString: Untagged
@@ -5040,6 +5041,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defaultMoveSpeed: 15
+  currentMoveSpeed: 0
   defaultRotateSpeed: 10
   driftRotateSpeed: 30
   rotateSmooth: 10
@@ -5057,7 +5059,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   paintLayer:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 512
   lineRenderer: {fileID: 8742754306547011034}
   paintMaterial: {fileID: 2100000, guid: 87a2c3d15cde1cf4a9977b062fd7be2b, type: 2}
   paintMeshCollider: {fileID: 8742754306547011033}
@@ -5109,8 +5111,24 @@ MonoBehaviour:
   depleateSpeed: 0.2
   paintReplenishLayer:
     serializedVersion: 2
-    m_Bits: 512
+    m_Bits: 1024
   paintMaterial: {fileID: 0}
+--- !u!114 &3363091248227003172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8742754308309633459}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8b6033c339ac944eafaf5f2762bb04a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minX: -25
+  maxX: 25
+  minZ: -15
+  maxZ: 15
 --- !u!1 &8742754308551122580
 GameObject:
   m_ObjectHideFlags: 0
@@ -5233,7 +5251,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ef6b17f04649bda45b4020d0def2450c,
         type: 3}
       propertyPath: m_Layer
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef6b17f04649bda45b4020d0def2450c, type: 3}

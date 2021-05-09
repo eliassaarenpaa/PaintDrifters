@@ -44,6 +44,11 @@ PrefabInstance:
       propertyPath: paintMaterial
       value: 
       objectReference: {fileID: 2100000, guid: f6b34d42549dfb14c992ca6e41856e8f, type: 2}
+    - target: {fileID: 7729765419481987871, guid: 4e507f80e1c81324ca8009b856c5e196,
+        type: 3}
+      propertyPath: paintReplenishLayer.m_Bits
+      value: 1024
+      objectReference: {fileID: 0}
     - target: {fileID: 8742754306547011034, guid: 4e507f80e1c81324ca8009b856c5e196,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -69,6 +74,11 @@ PrefabInstance:
       propertyPath: paintMaterial
       value: 
       objectReference: {fileID: 2100000, guid: 92590f01714ef0840ba2c8643d8d7ae4, type: 2}
+    - target: {fileID: 8742754308309633423, guid: 4e507f80e1c81324ca8009b856c5e196,
+        type: 3}
+      propertyPath: paintLayer.m_Bits
+      value: 512
+      objectReference: {fileID: 0}
     - target: {fileID: 8742754308309633458, guid: 4e507f80e1c81324ca8009b856c5e196,
         type: 3}
       propertyPath: m_LocalPosition.x
