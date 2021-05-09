@@ -20,6 +20,10 @@ public class Points : MonoBehaviour
 
     public int GetWinner()
     {
+        if ( playerOnePoints == playerTwoPoints ) {
+            return 0;
+        }
+        
         if (playerOnePoints > playerTwoPoints)
         {
             return 1;

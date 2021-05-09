@@ -4,7 +4,7 @@ using UnityEngine;
 #endregion
 
 public class MeshGenerator : MonoBehaviour {
-
+    
     private readonly List<GameObject> _paintStack = new List<GameObject>();
 
     public void GenerateMesh( Vector3[] points, Material mat ) {
@@ -12,6 +12,7 @@ public class MeshGenerator : MonoBehaviour {
         // Create a new instance & add components
         var instance = new GameObject( "Lätäkkö" );
         instance.layer = 10;
+        instance.transform.parent = transform;
         var meshFilter = instance.AddComponent<MeshFilter>();
         var meshRend = instance.AddComponent<MeshRenderer>();
         
